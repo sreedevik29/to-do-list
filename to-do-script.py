@@ -13,7 +13,7 @@ while active:
     elif input_type.lower() in ("school", "uni"):
     	to_do.update({"School": user_input})
     else:
-    	print("Sorry! That's not a category, please enter another category! ")
+    	to_do.update({input_type: user_input})
     more_activities = raw_input("Do you have more? Type 'yes' or 'y' to add more activities the to do list or type 'no' or 'n' to stop making the list: ")
     if more_activities == "no" or more_activities == "n":
         print("Here are the list of things you have to do: " + str(to_do))
